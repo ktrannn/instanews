@@ -1,0 +1,39 @@
+body{
+  font-family:'Open Sans Light', sans-serif;
+  background: black; 
+  color: white;
+  font-weight: lighter;
+  margin-left:0;
+  margin-right:0;
+} 
+
+ul {
+  display:flex;
+  flex-direction:column;
+  padding-left:0px;
+  padding-right:0px;
+}
+
+li {
+  display:flex;
+  list-style: none;
+
+  a{
+   
+    vertical-align:bottom;
+  }
+  img{
+    width:100vw;
+    height:85vw;
+  }
+}
+
+// use mix ins for media queries
+// @media screen and (min-width : 600px){
+//   /* Header */
+//   .header{
+//     display:flex;
+//     flex-wrap:wrap;
+//     justify-content: center;
+//   }
+// }
