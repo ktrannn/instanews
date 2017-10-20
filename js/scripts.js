@@ -21,19 +21,23 @@ $(document).ready(function () {
       // .always(function () {
       //   $preloader.hide();
       // })
-
+      // value.multimedia.length>0
      .done(function (data) {
       var resultsObj = data.results;
-      var sliced = resultsObj.slice(0, 11);
+      var sliced = resultsObj.slice(0, 12);
       
       $.each(sliced, function (index, value) {
+        var image = value.multimedia[4].url;
+        var articleText = value.abstract;
+        var articleLink = value.url;
+
         console.log(value);
         var output = '';
         output += '<li>';
-        output += '<a href=" ' + value.url + ' " ';
-        output += '<p>' + value.abstract + '</p>';
-        output += '<img src="' + value.multimedia[4].url + '">';
-        output += '</li>';
+        output += '<a href=" ' + articleLink + ' "> ';
+        output += '<div class="articePic" style="background-image:url(' + image + ')"></div>';
+        output += '<p>' + articleText + '</p>';
+        output += '</a></li>';
         $('#stories').append(output);
       });
       console.log(data);
@@ -42,3 +46,12 @@ $(document).ready(function () {
     });
   });
 });
+
+// flex text to bottom of img//
+// var output = '';
+// output += '<a';
+// output += 'href=" ' + value.url + ' ">';
+// output += 'style="background-image: url(' + value.multimedia[4].url + ')">';
+// output += '<div class="image-text>' + value.abstract + '</div>';
+// output += '</a>';
+// $('#stories').append(output);

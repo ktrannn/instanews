@@ -47,27 +47,28 @@ body {
   margin-left: 0;
   margin-right: 0; }
 
-ul {
+#stories {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding-left: 0px;
-  padding-right: 0px; }
-
-li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  list-style: none; }
-  li a {
-    vertical-align: bottom; }
-  li img {
-    width: 100vw;
-    height: 85vw; }
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%; }
+  #stories li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 450px;
+    list-style: none;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    #stories li a {
+      height: 400px;
+      width: 400px; }
+    #stories li .articlePic {
+      width: 400px;
+      height: 400px; }
 
 /* FOOTER */
 footer {

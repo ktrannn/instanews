@@ -6,26 +6,32 @@ body{
   margin-left:0;
   margin-right:0;
 } 
-
-ul {
+// #stories is the ul container
+#stories {  
   display:flex;
-  flex-direction:column;
-  padding-left:0px;
-  padding-right:0px;
-}
+  flex-wrap:wrap;
+  width:100%;
 
-li {
+
+  li {
   display:flex;
+  // flex: 1 0 100%;
+  // height:100vw;
+  height:450px;
   list-style: none;
+  align-items: center;
 
-  a{
-   
-    vertical-align:bottom;
-  }
-  img{
-    width:100vw;
-    height:85vw;
-  }
+    a { 
+    height:400px;
+    width:400px;
+     }
+  
+    .articlePic {
+    width:400px;
+    height: 400px;
+     }
+
+}
 }
 
 // use mix ins for media queries
