@@ -21,7 +21,6 @@ $(document).ready(function () {
       // .always(function () {
       //   $preloader.hide();
       // })
-      // value.multimedia.length>0
      .done(function (data) {
       var resultsObj = data.results;
       var sliced = resultsObj.slice(0, 12);
@@ -35,8 +34,8 @@ $(document).ready(function () {
         var output = '';
         output += '<li>';
         output += '<a href=" ' + articleLink + ' "> ';
-        output += '<div class="articePic" style="background-image:url(' + image + ')"></div>';
-        output += '<p>' + articleText + '</p>';
+        output += '<div class="articlePic" style="background-image:url(' + image + ')"></div>';
+        output += '<p class="text">' + articleText + '</p>';
         output += '</a></li>';
         $('#stories').append(output);
       });
