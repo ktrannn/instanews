@@ -1,13 +1,24 @@
-/* Header */
+
+/* logo picture */
+.logo{
+  padding-top:3.5rem;
+  transition: 1s;
+  }
+  
+  
+  /* Header */
 .header{
   display:flex;
   flex-wrap: wrap;
   justify-content: center;
+  transition: 1s;
 }
 
-/* logo picture */
-.logo{
-padding-top:3.5rem;
+.header-small {
+ .logo {
+   padding:0;
+   max-width: 100px;
+ }
 }
 
 
@@ -31,4 +42,14 @@ form{
   height:1.5rem;
   width:8rem;
   font-size:18px;
+}
+
+
+@media screen and (min-width : 600px){
+  /* Header */
+  .header{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+  }
 }
