@@ -128,15 +128,17 @@ form {
     width: 100vw;
     height: 40vw; }
     .header .logo {
-      padding-top: 5rem; }
+      padding-top: 5rem;
+      padding-left: 2rem; }
   .header-small {
-    width: 65rem;
+    width: 100vw;
     height: 115px; }
     .header-small .logo {
       padding-top: 0;
       padding-left: 0; }
   .sections {
-    width: 350px; } }
+    width: 350px;
+    padding-top: 5.5rem; } }
 
 body {
   font-family: 'Open Sans Light', sans-serif;
