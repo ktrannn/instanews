@@ -4,6 +4,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Instanews</title>
   <link rel="stylesheet" href="build/css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
@@ -11,34 +12,39 @@
 
 <body>
   <div class="container">
-    <header class="header">
-      <div>
+    <header>
+      <div class="header">
         <div class="logo">
           <img src="assets/images/nyt-logo.svg" alt="New York Times" class="logo">
         </div>
-        <p class="section-text">Choose a section</p>
-        <form action="section">
+        <form action="section" class="sections">
+          <p class="section-text">Choose a section</p>
           <select class="selections">
-            <option value="sections">sections...</option>
-            <option value="home">home</option>
-            <option value="arts">arts</option>
-            <option value="business">business</option>
-            <option value="sports">sports</option>
-            <option value="technology">technology</option>
-            <option value="fashion">fashion</option>
+            <option value="sections">Sections...</option>
+            <option value="home">Home</option>
+            <option value="arts">Arts</option>
+            <option value="business">Business</option>
+            <option value="sports">Sports</option>
+            <option value="technology">Technology</option>
+            <option value="fashion">Fashion</option>
           </select>
         </form>
       </div>
     </header>
     <div class="loader">
-      <img src="assets/images/ajax-loader.gif">
+      <img src="assets/images/ajax-loader.gif" alt="loader.gif">
     </div>
     <div class="stories-wrapper">
       <ul id="stories" class="stories"></ul>
     </div>
-    <footer class="footer-text">© Copyright 2016 INSTANEWS</footer>
   </div>
-  
+  <footer class="footer">
+    <div class="footer-text">
+      <p>© Copyright 2016 INSTANEWS</p>
+    </div>
+  </footer>
+
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="js/scripts.js"></script>
 </body>

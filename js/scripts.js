@@ -11,7 +11,7 @@ $(document).ready(function () {
       $('.header').addClass('header-small');
     } else {
     }
-
+// ^^^^^^^^^^^^^^^^^ fix this 
     var userSelection = $('.selections').val();
     var url = 'https://api.nytimes.com/svc/topstories/v2/' + userSelection + '.json';
     url += '?' + $.param({
