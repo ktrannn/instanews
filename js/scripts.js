@@ -35,7 +35,8 @@ $(document).ready(function () {
         console.log(sliced);
 
         $.each(sliced, function (index, value) {
-          var image = value.multimedia[4].url;
+          var images = value.multimedia.length - 1;
+          var image = value.multimedia[images].url;
           var articleText = value.abstract;
           var articleLink = value.url;
 
@@ -52,4 +53,3 @@ $(document).ready(function () {
       });
   });
 });
-
