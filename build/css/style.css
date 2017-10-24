@@ -241,20 +241,30 @@ footer {
 
 .footer-text {
   color: #c2c2c2;
-  padding-top: 9rem;
-  text-align: center; }
+  padding-top: 11rem;
+  text-align: center;
+  font-size: 14px; }
+
+.footer-text-small {
+  padding-top: 2rem; }
 
 @media screen and (min-width: 600px) {
   .footer-text {
     text-align: center;
     height: 100%;
     width: auto;
+    padding-top: 8rem; }
+  .footer-text-small {
     padding-top: 3rem; } }
 
 @media screen and (min-width: 1000px) {
+  footer {
+    margin: 0; }
   .logo {
     padding-top: 0; }
   .footer-text {
     text-align: left;
     padding-left: 2rem;
-    padding-top: 2rem; } }
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin: 0; } }

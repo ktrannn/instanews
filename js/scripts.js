@@ -10,7 +10,12 @@ $(document).ready(function () {
       $('.header').addClass('header-small');
     } else {
     }
-// ^^^^^^^^^^^^^^^^^ fix this 
+    
+   if (!$('.footer-text').hasClass('footer-text-small')){
+     $('.footer-text').addClass("footer-text-small");
+   }else{  
+   }
+
     var userSelection = $('.selections').val();
     var url = 'https://api.nytimes.com/svc/topstories/v2/' + userSelection + '.json';
     url += '?' + $.param({
