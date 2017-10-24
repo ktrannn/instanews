@@ -69,8 +69,7 @@ table {
       flex-wrap: wrap; }
 
 .header-small .logo {
-  padding: 0;
-  max-width: 120px; }
+  padding: 0; }
 
 /* selection-form */
 form {
@@ -110,6 +109,8 @@ form {
     height: 115px; }
     .header-small .logo {
       height: 75px; }
+      .header-small .logo .logoimg {
+        width: 120px; }
     .header-small .sections {
       padding-top: 0rem; }
   .sections {
@@ -130,6 +131,8 @@ form {
     .header .logo {
       padding-top: 5rem;
       padding-left: 2rem; }
+  .section-text {
+    font-size: 16px; }
   .header-small {
     width: 100vw;
     height: 115px; }

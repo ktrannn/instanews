@@ -1,8 +1,8 @@
 /* FOOTER */
 
- footer{
-   margin-bottom: 3rem;
- }
+footer{
+  margin-bottom: 3rem;
+}
 
 .footer-text{
   color:#c2c2c2; 
@@ -22,15 +22,13 @@
 
 }
 
-
 @media screen and (min-width : 1000px){
- 
- .logo{
+.logo{
    padding-top:0;
- }
-  .footer-text{
-   text-align: left;
-   padding-left: 2rem;
-   padding-top: 6rem;
+}
+.footer-text{
+  text-align: left;
+  padding-left: 2rem;
+  padding-top: 6rem;
  }
 }

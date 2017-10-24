@@ -6,7 +6,6 @@ $(document).ready(function () {
   $('.selections').on('change', function () {
 
     $('.loader').show();
-
     if (!$('.header').hasClass('header-small')) {
       $('.header').addClass('header-small');
     } else {
@@ -25,7 +24,7 @@ $(document).ready(function () {
     })
 
       .done(function (data) {
-
+        
         $('.loader').hide();
         var resultsObj = data.results;
         var sliced = resultsObj.filter(function (item) {
