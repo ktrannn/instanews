@@ -23,11 +23,12 @@
 
  .logo {
   padding:0;
-  
-  .logo-img{
-    width: 120px;
-    padding-top: 2rem;
+
   }
+  .logoimg{
+  width: 140px;
+  padding-top: 2rem;
+}
 }
 
 
@@ -64,19 +65,23 @@ form{
 .header{
   display:flex;
   align-items: center;
-  height:80vw;
+  // height:80vw;
+  height: 400px;
 }
 
 .header-small{
   justify-content: flex-start;
   width: 100vw;
+  // padding-left: 12rem;
   padding-top: 1rem;
   height: 115px;
 
 
    .logo{
      height:75px;
-
+     .logoimg{
+       width:120px;
+     }
    }
    .sections{
     padding-top:0rem;
@@ -97,13 +102,15 @@ form{
 .header{
    justify-content: flex-start;
    width:100vw;
-   height:40vw;
+   height:38vw;
    
  .logo{
   padding-top:5rem;
   padding-left:2rem;
   }
 }
+
+
 
 .section-text{
   font-size: 16px;
@@ -112,7 +119,9 @@ form{
  .header-small{
   width:100vw;
   height: 115px;
-
+  .sections{
+    padding-left:0;
+  }
 
   .logo{
     padding-top: 0;
@@ -122,7 +131,7 @@ form{
   
 
 .sections{
-  width: 350px;
+  padding-left:5rem;
   padding-top:5.5rem;
 }
 
