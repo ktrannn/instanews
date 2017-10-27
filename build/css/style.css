@@ -244,6 +244,8 @@ footer {
   padding-top: 11rem;
   text-align: center;
   font-size: 14px; }
+  .footer-text p span {
+    text-transform: uppercase; }
 
 .footer-text-small {
   padding-top: 2rem; }
