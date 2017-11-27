@@ -15,7 +15,7 @@ body{
   padding-top:1rem;
 }
 
-// loader gif
+/* Loading gif on story select */
 .loader{
   display:none;
   width:45px;
@@ -29,9 +29,6 @@ body{
   }
 } 
 
-
-
-// #stories is the ul container
 .stories {  
   display:flex;
   flex-wrap:wrap;
@@ -81,7 +78,6 @@ body{
     }
   }
 }
-// use mix ins for media queries
 
 @media screen and (min-width : 600px){
  

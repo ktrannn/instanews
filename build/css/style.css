@@ -162,6 +162,7 @@ body {
       flex-wrap: wrap;
   padding-top: 1rem; }
 
+/* Loading gif on story select */
 .loader {
   display: none;
   width: 45px;
