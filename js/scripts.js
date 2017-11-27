@@ -41,13 +41,14 @@ $(document).ready(() => {
             image = value.multimedia[images].url,
             articleText = value.abstract,
             articleLink = value.url;
-
+          
           let output = '';
-          output += '<li>';
-          output += '<a href="' + articleLink + '">';
-          output += '<div class="articlePic" style="background-image:url(' + image + ')">';
-          output += '<p class="text">' + articleText + '</p></div>';
-          output += '</a></li>';
+            output += '<li>';
+            output += '<a href="' + articleLink + '" >';
+            output += '<div class="articlePic" style="background-image:url(' + image + ')">';
+            output += '<p class="text">' + articleText + '</p></div>';
+            output += '</a></li>';
+          $("a").attr("target", "_blank")
           $('#stories').append(output);
         });
       }).fail((err) => {
