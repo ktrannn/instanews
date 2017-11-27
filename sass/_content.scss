@@ -54,10 +54,8 @@ body{
     }
     p{
       height:0;
+      visibility: hidden;
       position: absolute;
-      padding-top:0;
-      padding-bottom:0;
-      margin-bottom:0;
       bottom:0;
       background-color: rgba(0, 0, 0, 0.6);
       font-size:17px;
@@ -72,6 +70,7 @@ body{
   li{
     a:hover{
       p{
+        visibility: visible;
         height:35%;
         transition: height 1s;
       }
