@@ -10,7 +10,10 @@
     "no-empty": 1,
     "no-param-reassign": 1,
     "no-unused-vars": 1,
-    "quotes": [ 1, "single"]
+    "quotes": [
+      1,
+      "single"
+    ]
     // our rules will go here...
   },
   "globals": {
@@ -20,5 +23,7 @@
   },
   "env": {
     "browser": true
-  }
+  },
+  "parser": "babel-eslint"
+
 }

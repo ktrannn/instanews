@@ -1,13 +1,25 @@
 var gulp = require('gulp'); // loads gulp 
-var uglify = require('gulp-uglify'),
+  uglify = require('gulp-uglify'),
   rename = require('gulp-rename'),
   browserSync = require('browser-sync'),
   eslint = require('gulp-eslint'),
   sass = require('gulp-sass'),
   autoprefixer = require('gulp-autoprefixer'),
   cssnano = require('gulp-cssnano'),
-  prettyError = require('gulp-prettyerror');
-//
+  prettyError = require('gulp-prettyerror'),
+  babel = require('gulp-babel');
+
+  const input = './js/scripts.js';
+  const output = './js/transpiled';
+
+gulp.task('babel', () => {
+  return gulp.src('./js/*.js')
+      .pipe(babel())
+      .pipe(gulp.dest(output));
+});
+
+
+
 gulp.task('sass', function() {
   gulp.src('./sass/style.scss')
      .pipe(prettyError())//handles error before running
@@ -21,14 +33,15 @@ gulp.task('sass', function() {
      .pipe(gulp.dest('./build/css'));
 });
 
-gulp.task('scripts',['lint'], function () {
+gulp.task('scripts',['eslint','babel'], function () {
   gulp.src('./js/*.js') // What files do we want gulp to consume?
+    .pipe(babel())
     .pipe(uglify()) // Call the uglify function on these files
     .pipe(rename({ extname: '.min.js' })) // Rename uglified file
     .pipe(gulp.dest('./build/js')) //dist uglified file to/build/js
 });
 
-gulp.task('lint', function () {
+gulp.task('eslint', function () {
   return gulp.src(['./js/*.js','!node_modules/**'])
   .pipe(eslint())
   .pipe(eslint.format()) 

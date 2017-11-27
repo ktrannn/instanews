@@ -61,6 +61,7 @@ body{
     background-size:cover;
     background-position:50%;
     }
+    
 
     p{
       position: absolute;
@@ -77,7 +78,6 @@ body{
     }
 }
 }
-
 // use mix ins for media queries
 
 @media screen and (min-width : 600px){
