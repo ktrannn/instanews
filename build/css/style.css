@@ -70,10 +70,9 @@ table {
 
 .header-small .logo {
   padding: 0; }
-
-.header-small .logoimg {
-  width: 140px;
-  padding-top: 2rem; }
+  .header-small .logo .img {
+    width: 140px;
+    padding-top: 2rem; }
 
 /* selection-form */
 form {
@@ -112,18 +111,15 @@ form {
     padding-top: 1rem;
     height: 115px; }
     .header-small .logo {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      max-width: 250px;
       height: 75px; }
       .header-small .logo .logoimg {
         width: 120px; }
     .header-small .sections {
-      padding-top: 0rem; }
-  .sections {
-    padding-top: 9rem; }
-  .logo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    max-width: 250px; } }
+      padding-top: 0rem; } }
 
 @media screen and (min-width: 1000px) {
   .header {

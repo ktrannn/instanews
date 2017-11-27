@@ -14,8 +14,8 @@ var gulp = require('gulp'); // loads gulp
 
 gulp.task('babel', () => {
   return gulp.src('./js/*.js')
-      .pipe(babel())
-      .pipe(gulp.dest(output));
+    .pipe(babel())
+    .pipe(gulp.dest(output));
 });
 
 
@@ -63,6 +63,5 @@ gulp.task('browser-sync', function () {
   gulp.watch(['*.html', 'build/css/*.css', 'build/js/*.js']).on('change', browserSync.reload);
 });
 
-// Modify our default task method by passing an array of task names
 gulp.task('default', ['watch', 'browser-sync']);
 
