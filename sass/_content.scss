@@ -13,7 +13,6 @@ body{
   display:flex;
   flex-wrap:wrap;
   padding-top:1rem;
-
 }
 
 // loader gif
@@ -25,7 +24,6 @@ body{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
   img{
     width:100%;
   }
@@ -37,10 +35,8 @@ body{
 .stories {  
   display:flex;
   flex-wrap:wrap;
-  // max-width:100%;
   height:auto;
   padding-left:0;
-// li container
   li {
   flex: 1 1 100%;
   max-width:100%;
@@ -48,12 +44,10 @@ body{
   list-style: none;
   align-items: center;
   position: relative;
-
     a { 
     color:white;
     margin-top:0;
      }
-   
     .articlePic {
     display:column;
     width: 100vw;
@@ -61,8 +55,6 @@ body{
     background-size:cover;
     background-position:50%;
     }
-    
-
     p{
       position: absolute;
       padding-top:0;
@@ -76,36 +68,30 @@ body{
        color:white; 
       }
     }
-}
+ }
 }
 // use mix ins for media queries
 
 @media screen and (min-width : 600px){
  
   .stories{ 
-  
   li{
    flex: 1 1 50%;
    max-width:50%;
-  
-
     .articlePic{
     width:50vw;
      }
    }
-  
+ }
 }
-
 @media screen and (min-width : 1000px){
 
   .stories{
-
-   li{
-     flex: 1 1 25%;
-
-  .articlePic{
-    width:25vw;
+    li{
+      flex: 1 1 25%;
+    .articlePic{
+      width:25vw;
+      }
     }
   }
-  }
-}}
+}
