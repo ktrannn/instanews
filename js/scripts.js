@@ -2,6 +2,7 @@ $(document).ready(() => {
   const $stories = $('.stories')
   const $head = $('.header')
   const $footer = $('.footer-text')
+  $('.selections').selectric();
   $('.selections').on('change', () => {
 
     $('.loader').show();
@@ -55,4 +56,4 @@ $(document).ready(() => {
   });
 });
 
-$('.section').selectric();
+

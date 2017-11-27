@@ -4,6 +4,7 @@ $(document).ready(function () {
   var $stories = $('.stories');
   var $head = $('.header');
   var $footer = $('.footer-text');
+  $('.selections').selectric();
   $('.selections').on('change', function () {
 
     $('.loader').show();
@@ -54,5 +55,3 @@ $(document).ready(function () {
     });
   });
 });
-
-$('.section').selectric();
