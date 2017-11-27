@@ -217,7 +217,7 @@ body {
         color: white; }
 
 .stories li a:hover p {
-  height: 50%;
+  height: 35%;
   -webkit-transition: height 1s;
   transition: height 1s; }
 

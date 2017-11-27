@@ -2,10 +2,8 @@
 
 $(document).ready(function () {
   var $stories = $('.stories');
-  // const $preloader = $('.preloader')
   var $head = $('.header');
   var $footer = $('.footer-text');
-  // when user selects choice on menu, it will input the user selected value into url to get page//
   $('.selections').on('change', function () {
 
     $('.loader').show();
@@ -23,7 +21,7 @@ $(document).ready(function () {
       'api-key': '398e57e8d5124be18dd6456b4589b28e'
     });
 
-    $stories.empty(); //when a new selection is made, stories ul gets resetted instead of being added to bottom
+    $stories.empty();
     $.ajax({
       url: url,
       method: 'GET'
@@ -56,3 +54,5 @@ $(document).ready(function () {
     });
   });
 });
+
+$('.section').selectric();

@@ -1,9 +1,7 @@
 $(document).ready(() => {
   const $stories = $('.stories')
-  // const $preloader = $('.preloader')
   const $head = $('.header')
   const $footer = $('.footer-text')
-  // when user selects choice on menu, it will input the user selected value into url to get page//
   $('.selections').on('change', () => {
 
     $('.loader').show();
@@ -21,7 +19,7 @@ $(document).ready(() => {
       'api-key': '398e57e8d5124be18dd6456b4589b28e'
     });
 
-    $stories.empty(); //when a new selection is made, stories ul gets resetted instead of being added to bottom
+    $stories.empty();
     $.ajax({
       url: url,
       method: 'GET',
@@ -56,3 +54,5 @@ $(document).ready(() => {
       });
   });
 });
+
+$('.section').selectric();
