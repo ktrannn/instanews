@@ -80,7 +80,7 @@ form {
 
 /* Choose a section */
 .section-text {
-  color: white;
+  color: #fff;
   font-size: 14px;
   padding-bottom: 1rem; }
 
@@ -203,6 +203,7 @@ body {
       background-size: cover;
       background-position: 50%; }
     .stories li p {
+      height: 0;
       position: absolute;
       padding-top: 0;
       padding-bottom: 0;
@@ -213,6 +214,11 @@ body {
       line-height: 1.5rem; }
       .stories li p p.text {
         color: white; }
+
+.stories li a:hover p {
+  height: 50%;
+  -webkit-transition: height 1s;
+  transition: height 1s; }
 
 @media screen and (min-width: 600px) {
   .stories li {
