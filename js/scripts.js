@@ -32,7 +32,7 @@ $(document).ready(() => {
         $('.loader').hide();
         let resultsObj = data.results;
         let sliced = resultsObj.filter((item) => {
-          if (item.multimedia.length === 0){
+          if (item.multimedia.length === 0);{
           return item.multimedia.length;
           }
         }).slice(0, 12);
