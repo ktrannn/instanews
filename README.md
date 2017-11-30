@@ -21,4 +21,8 @@ Instanews App uses these following plugins:
 
 | Plugin | Usage |
 | ------ | ------ |
+<<<<<<< HEAD
 | Selectric | Custom dropdown menu |
+=======
+| Selectric | Custom dropdown menu |
+>>>>>>> af3bbc954828f008c8d385d86de5abf84b57b0ca
