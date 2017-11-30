@@ -2,9 +2,9 @@
 Instanews is a website that displays the different top news stories using an API from the New York Times. Users can filter through different sections of the New York Times using a drop down menu, and it will display 12  stories from that section of the New York Times. 
 
   - Select  a section from the select dropdown menu
-  - Hover over the images to see abstract
+  - Hover over the images to see a brief summary of the article
   - Click on desirable article
-  - Desired article will open a new tab to the story on New York Times website
+  - Desired article will open in a new tab to the story on New York Times website
 
 ### Techonologies Used
 - Gulp
