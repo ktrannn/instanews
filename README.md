@@ -1,10 +1,10 @@
 # Project 2 - Instanews App
-Instanews is an app that displays the different top news stories using an API from the New York Times. Users can filter through different sections of the New York Times and the app will display 12 top stories from that section of the New York Times. 
+Instanews is a website that displays the different top news stories using an API from the New York Times. Users can filter through different sections of the New York Times using a drop down menu, and it will display 12  stories from that section of the New York Times. 
 
   - Select  a section from the select dropdown menu
   - Hover over the images to see abstract
   - Click on desirable article
-  - The app will open a new tab to the story on New York Times website
+  - Desired article will open a new tab to the story on New York Times website
 
 ### Techonologies Used
 - Gulp
@@ -21,4 +21,4 @@ Instanews App uses these following plugins:
 
 | Plugin | Usage |
 | ------ | ------ |
-| Selectric | Custom select dropdown |
+| Selectric | Custom dropdown menu |
