@@ -7,14 +7,14 @@ Instanews is an app that displays the different top news stories using an API fr
   - The app will open a new tab to the story on New York Times website
 
 ### Techonologies Used
-*Gulp
-*Jquery 
-*HTML 
-*CSS
-*SASS
-*API
-*NPM Packages
-*ESLINT
+- Gulp
+- Jquery 
+- HTML 
+- CSS
+- SASS
+- API
+- NPM Packages
+- ESLINT
 
 ### Plugins
 Instanews App uses these following plugins:
