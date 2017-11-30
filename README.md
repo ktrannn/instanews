@@ -6,7 +6,7 @@ Instanews is a website that displays the different top news stories using an API
   - Click on desirable article
   - Desired article will open in a new tab to the story on New York Times website
 
-### Techonologies Used
+### Techonologies & Languages Used
 - Gulp
 - Jquery 
 - HTML 
