@@ -1,14 +1,24 @@
-<img src="icon.png" align="right" />
+# Project 2 - Instanews App
+Instanews is a website that displays the different top news stories using an API from the New York Times. Users can filter through different sections of the New York Times using a drop down menu, and it will display 12  stories from that section of the New York Times. 
 
+  - Select  a section from the select dropdown menu
+  - Hover over the images to see a brief summary of the article
+  - Click on desirable article
+  - Desired article will open in a new tab to the story on New York Times website
 
-## Technologies Used
-Gulp, Jquery, HTML, CSS, SASS, API, NPM Packages, Terminal, ESLINT
+### Techonologies & Languages Used
+- Gulp
+- Jquery 
+- HTML 
+- CSS
+- SASS
+- API
+- NPM Packages
+- ESLINT
 
-## Project Summary
-The Instanews project focused on building our css and javascript skills while implementing new technologies like gulp,sass,NPM packages to create our dev environment and make developing easier.
+### Plugins
+Instanews App uses these following plugins:
 
-
-## Personal Learnings 
-For this project i made sure to go with a mobile first approach and it made my life so much more easier, also i should be commiting more regularly than commiting once i finished making a bunch of major changes. Every small change that looks good and works perfect i should commit right away and add beter commit messages for future reference.
-
-
+| Plugin | Usage |
+| ------ | ------ |
+| Selectric | Custom dropdown menu |
