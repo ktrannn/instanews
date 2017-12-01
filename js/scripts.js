@@ -48,11 +48,11 @@ $(document).ready(() => {
             output += '<div class="articlePic" style="background-image:url(' + image + ')">';
             output += '<p class="text">' + articleText + '</p></div>';
             output += '</a></li>';
-          $("a").attr("target", "_blank")
+          $('a').attr('target', '_blank')
           $('#stories').append(output);
         });
-      }).fail((err) => {
-        throw err;
+      }).fail(() => {
+        $('.loader').hide();
       });
   });
 });
