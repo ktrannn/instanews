@@ -184,6 +184,7 @@ body {
   height: auto;
   padding-left: 0; }
   .stories li {
+    overflow: hidden;
     -webkit-box-flex: 1;
         -ms-flex: 1 1 100%;
             flex: 1 1 100%;
@@ -210,7 +211,10 @@ body {
       bottom: 0;
       background-color: rgba(0, 0, 0, 0.6);
       font-size: 17px;
-      line-height: 1.5rem; }
+      line-height: 1.5rem;
+      padding-left: 5%;
+      padding-right: 5%;
+      padding-top: 1%; }
       .stories li p p.text {
         color: white; }
 
@@ -219,6 +223,11 @@ body {
   height: 35%;
   -webkit-transition: height 1s;
   transition: height 1s; }
+
+.fail-message {
+  text-align: center;
+  font-size: 2rem;
+  text-transform: uppercase; }
 
 @media screen and (min-width: 600px) {
   .stories li {

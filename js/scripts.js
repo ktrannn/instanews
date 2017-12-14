@@ -53,6 +53,7 @@ $(document).ready(() => {
         });
       }).fail(() => {
         $('.loader').hide();
+        $("body").append('<p class="fail-message">no stories were found</p>');
       });
   });
 });
