@@ -53,7 +53,7 @@ $(document).ready(function () {
       });
     }).fail(function () {
       $('.loader').hide();
-      $("body").append('<p class="fail-message">no stories were found</p>');
+      alert("No stories were found! Please selection a different section");
     });
   });
 });
