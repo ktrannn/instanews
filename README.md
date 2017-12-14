@@ -23,3 +23,4 @@ Instanews App uses these following plugins:
 | ------ | ------ |
 | Selectric | Custom dropdown menu |
 =======
+<img src="https://i.imgur.com/FZHHdXs.png" width="100"> <img src="https://i.imgur.com/RaPxMIr.png" width="100"> <img src="https://i.imgur.com/de2ZnWG.png" width="100">
