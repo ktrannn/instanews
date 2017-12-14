@@ -205,11 +205,12 @@ body {
       background-size: cover;
       background-position: 50%; }
     .stories li p {
-      height: 35%;
+      height: 0;
+      visibility: hidden;
       position: absolute;
       bottom: 0;
       background-color: rgba(0, 0, 0, 0.6);
-      font-size: 17px;
+      font-size: 16px;
       line-height: 1.5rem;
       padding-left: 5%;
       padding-right: 5%;
